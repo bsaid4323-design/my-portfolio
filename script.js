@@ -1,27 +1,9 @@
-const toggle =
-document.getElementById("themeToggle");
-
-toggle.onclick = () => {
-
-  document.body.classList.toggle("light");
-
-};
-
-const observer =
-new IntersectionObserver(entries => {
-
-  entries.forEach(entry => {
-
-    if(entry.isIntersecting){
-
-      entry.target.classList.add("show");
-
-    }
-
-  });
-
+console.log("Welcome to Said Brahimi's Portfolio!");
+document.querySelectorAll('section').forEach(section => {
+    section.addEventListener('mouseover', () => {
+        section.style.backgroundColor = '#ecf0f1';
+    });
+    section.addEventListener('mouseout', () => {
+        section.style.backgroundColor = 'white';
+    });
 });
-
-document
-.querySelectorAll(".fade")
-.forEach(el => observer.observe(el));
