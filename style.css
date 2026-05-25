@@ -1,18 +1,151 @@
-/* التصميم العام */
-body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; color: #2d3436; }
-.container { max-width: 900px; margin: auto; padding: 20px; }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
-/* قسم الهيدر */
-.hero { background: linear-gradient(135deg, #2c3e50, #34495e); color: white; padding: 60px 20px; text-align: center; }
-.hero h1 { margin: 0; font-size: 2.5em; }
+body{
+  background:#0f172a;
+  color:white;
+}
 
-/* البطاقات */
-.card { background: white; padding: 30px; margin: 20px 0; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-h2 { color: #0984e3; border-right: 5px solid #0984e3; padding-right: 15px; }
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
 
-/* الأزرار والروابط */
-.social-links { display: flex; gap: 15px; justify-content: center; }
-.social-links a { text-decoration: none; padding: 12px 25px; border-radius: 30px; color: white; font-weight: bold; transition: transform 0.3s; }
-.btn-fb { background: #3b5998; }
-.btn-tg { background: #0088cc; }
-.social-links a:hover { transform: scale(1.05); }
+/* NAV */
+header{
+  background:#111827;
+  position:sticky;
+  top:0;
+  padding:15px 0;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:#38bdf8;
+}
+
+nav a{
+  color:white;
+  margin-left:15px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  display:flex;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:45px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#cbd5e1;
+  margin-bottom:20px;
+}
+
+.btn{
+  background:#38bdf8;
+  padding:12px 25px;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 0;
+}
+
+.dark{
+  background:#111827;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:40px;
+  color:#38bdf8;
+  font-size:32px;
+}
+
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+
+.card{
+  background:#1e293b;
+  padding:20px;
+  text-align:center;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.box{
+  background:#1e293b;
+  padding:25px;
+  margin-bottom:15px;
+  border-radius:10px;
+}
+
+.box h3{
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+/* LINKS */
+.links a{
+  color:#38bdf8;
+  margin-right:10px;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111827;
+  color:#94a3b8;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .nav{
+    flex-direction:column;
+  }
+
+  nav{
+    margin-top:10px;
+  }
+
+  .hero h2{
+    font-size:30px;
+  }
+}

@@ -1,48 +1,129 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بورتفوليو سعيد إبراهيمي | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Said Brahimi | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <header class="hero">
-        <h1>سعيد إبراهيمي</h1>
-        <p>طالب طاقة متجددة | متخصص في الأنظمة الذكية والأتمتة</p>
-    </header>
+<header>
+  <div class="container nav">
+    <h1 class="logo">Said Brahimi</h1>
 
-    <main class="container">
-        <section class="card">
-            <h2>عني</h2>
-            <p>أنا طالب شغوف بدمج التكنولوجيا مع حلول الطاقة المستدامة. أسعى لتطوير مشاريع برمجية وهندسية تساهم في أتمتة الأنظمة ورفع كفاءتها.</p>
-        </section>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-        <section class="card">
-            <h2>المهارات التقنية</h2>
-            <ul class="skills-list">
-                <li>الطاقة المتجددة & تقنيات الطاقة الشمسية</li>
-                <li>برمجة المتحكمات الدقيقة (Arduino, ESP32)</li>
-                <li>تحليل البيانات (Power BI, Orange)</li>
-                <li>العمل الجماعي وحل المشكلات الهندسية</li>
-            </ul>
-        </section>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <h2>Renewable Energy Engineer</h2>
+    <p>
+      Passionate about solar energy systems, embedded systems,
+      and smart engineering solutions using modern technologies.
+    </p>
+    <a href="#contact" class="btn">Get In Touch</a>
+  </div>
+</section>
 
-        <section class="card">
-            <h2>المشاريع المبتكرة</h2>
-            <p><strong>نظام تتبع الطاقة الشمسية:</strong> نظام ذكي يتحكم في زاوية الألواح لتعظيم امتصاص أشعة الشمس باستخدام Arduino.</p>
-        </section>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="title">About Me</h2>
+    <p>
+      I am a Renewable Energy student specializing in solar systems,
+      automation, and embedded systems. I focus on building practical
+      engineering projects that solve real-world energy problems.
+    </p>
+  </div>
+</section>
 
-        <section class="card contact">
-            <h2>تواصل معي</h2>
-            <div class="social-links">
-                <a href="رابط_الفيسبوك" target="_blank" class="btn-fb">فيسبوك</a>
-                <a href="https://t.me/اسم_المستخدم" target="_blank" class="btn-tg">تيليجرام</a>
-            </div>
-        </section>
-    </main>
+<!-- SKILLS -->
+<section id="skills" class="section dark">
+  <div class="container">
+    <h2 class="title">Skills</h2>
 
-    <script src="script.js"></script>
+    <div class="grid">
+      <div class="card">Renewable Energy Systems</div>
+      <div class="card">Solar Tracking Systems</div>
+      <div class="card">Arduino Programming</div>
+      <div class="card">ESP32 Basics</div>
+      <div class="card">Power BI</div>
+      <div class="card">Data Analysis</div>
+      <div class="card">Technical Writing</div>
+      <div class="card">Problem Solving</div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container">
+    <h2 class="title">Education</h2>
+
+    <div class="box">
+      <h3>Master 1 in Renewable Energy</h3>
+      <p>Kasdi Merbah University Ouargla</p>
+      <span>2025 - Present</span>
+    </div>
+
+    <div class="box">
+      <h3>Bachelor Degree in Renewable Energy</h3>
+      <p>Kasdi Merbah University Ouargla</p>
+      <span>2025</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project" class="section dark">
+  <div class="container">
+    <h2 class="title">Project</h2>
+
+    <div class="box">
+      <h3>Solar Tracking System (Arduino)</h3>
+      <p>
+        An intelligent system that automatically follows the sun
+        to maximize solar energy efficiency using Arduino and sensors.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="title">Contact</h2>
+
+    <div class="box">
+      <p>Email: bsaid4323@gmail.com</p>
+      <p>Phone: +213 675 29 76 83</p>
+
+      <div class="links">
+        <a href="https://www.facebook.com/admi.ral000032" target="_blank">Facebook</a>
+        <a href="https://t.me/brahmi_said" target="_blank">Telegram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Said Brahimi. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
