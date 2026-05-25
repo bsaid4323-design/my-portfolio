@@ -1,9 +1,8 @@
-console.log("Welcome to Said Brahimi's Portfolio!");
-document.querySelectorAll('section').forEach(section => {
-    section.addEventListener('mouseover', () => {
-        section.style.backgroundColor = '#ecf0f1';
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.boxShadow = '0 20px 30px rgba(0,0,0,0.1)';
     });
-    section.addEventListener('mouseout', () => {
-        section.style.backgroundColor = 'white';
+    card.addEventListener('mouseleave', () => {
+        card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.05)';
     });
 });

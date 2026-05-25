@@ -1,45 +1,48 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Said Brahimi | Portfolio</title>
+    <title>بورتفوليو سعيد إبراهيمي | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="hero">
         <h1>سعيد إبراهيمي</h1>
-        <p>طالب طاقة متجددة | مهتم بالتكنولوجيا والأتمتة</p>
+        <p>طالب طاقة متجددة | متخصص في الأنظمة الذكية والأتمتة</p>
     </header>
 
-    <section id="about">
-        <h2>عني</h2>
-        <p>طالب في مجال الطاقة المتجددة، شغوف بالتكنولوجيا وأنظمة الطاقة المتجددة وحلول الهندسة الذكية. أستمتع بتطوير المشاريع المبتكرة والأنظمة المدمجة والأتمتة.</p>
-    </section>
+    <main class="container">
+        <section class="card">
+            <h2>عني</h2>
+            <p>أنا طالب شغوف بدمج التكنولوجيا مع حلول الطاقة المستدامة. أسعى لتطوير مشاريع برمجية وهندسية تساهم في أتمتة الأنظمة ورفع كفاءتها.</p>
+        </section>
 
-    <section id="skills">
-        <h2>المهارات</h2>
-        <ul>
-            <li>الطاقة المتجددة وتقنيات الطاقة الشمسية</li>
-            <li>برمجة Arduino و ESP32</li>
-            <li>تحليل البيانات باستخدام Power BI و Orange</li>
-            <li>حل المشكلات والعمل الجماعي</li>
-        </ul>
-    </section>
+        <section class="card">
+            <h2>المهارات التقنية</h2>
+            <ul class="skills-list">
+                <li>الطاقة المتجددة & تقنيات الطاقة الشمسية</li>
+                <li>برمجة المتحكمات الدقيقة (Arduino, ESP32)</li>
+                <li>تحليل البيانات (Power BI, Orange)</li>
+                <li>العمل الجماعي وحل المشكلات الهندسية</li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>المشاريع: نظام تتبع الطاقة الشمسية</h2>
-        <p>مشروع تخرج يركز على تحسين كفاءة الألواح الشمسية باستخدام نظام تتبع تلقائي يتم التحكم فيه بواسطة Arduino.</p>
-    </section>
+        <section class="card">
+            <h2>المشاريع المبتكرة</h2>
+            <p><strong>نظام تتبع الطاقة الشمسية:</strong> نظام ذكي يتحكم في زاوية الألواح لتعظيم امتصاص أشعة الشمس باستخدام Arduino.</p>
+        </section>
 
-    <section id="contact">
-        <h2>تواصل معي</h2>
-        <div class="social-links">
-            <a href="https://facebook.com/رابط_حسابك" target="_blank">فيسبوك</a> | 
-            <a href="https://t.me/اسم_مستخدم_تيليجرام" target="_blank">تيليجرام</a>
-        </div>
-    </section>
+        <section class="card contact">
+            <h2>تواصل معي</h2>
+            <div class="social-links">
+                <a href="رابط_الفيسبوك" target="_blank" class="btn-fb">فيسبوك</a>
+                <a href="https://t.me/اسم_المستخدم" target="_blank" class="btn-tg">تيليجرام</a>
+            </div>
+        </section>
+    </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
