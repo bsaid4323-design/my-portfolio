@@ -4,10 +4,20 @@ toggle.onclick = () => {
   document.body.classList.toggle("light");
 };
 
+// smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.onclick = e=>{
+    e.preventDefault();
+    document.querySelector(a.getAttribute("href"))
+    .scrollIntoView({behavior:"smooth"});
+  }
+});
+
+// animation on scroll
 const observer = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add("show");
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
     }
   });
 });
